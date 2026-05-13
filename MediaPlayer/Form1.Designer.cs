@@ -43,73 +43,84 @@
             // 
             this.wmpVideo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.wmpVideo.Enabled = true;
-            this.wmpVideo.Location = new System.Drawing.Point(0, 0);
+            this.wmpVideo.Location = new System.Drawing.Point(20, 20);
             this.wmpVideo.Name = "wmpVideo";
             this.wmpVideo.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmpVideo.OcxState")));
-            this.wmpVideo.Size = new System.Drawing.Size(800, 450);
+            this.wmpVideo.Size = new System.Drawing.Size(640, 410);
             this.wmpVideo.TabIndex = 0;
             // 
             // palButton
             // 
+            this.palButton.BackColor = System.Drawing.Color.DimGray;
             this.palButton.Controls.Add(this.btnStop);
             this.palButton.Controls.Add(this.btnPause);
             this.palButton.Controls.Add(this.btnPlay);
             this.palButton.Controls.Add(this.btnBrowser);
-            this.palButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.palButton.Location = new System.Drawing.Point(0, 393);
+            this.palButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.palButton.Location = new System.Drawing.Point(660, 20);
             this.palButton.Name = "palButton";
-            this.palButton.Size = new System.Drawing.Size(800, 57);
+            this.palButton.Size = new System.Drawing.Size(120, 410);
             this.palButton.TabIndex = 1;
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(342, 10);
+            this.btnStop.BackColor = System.Drawing.Color.DarkGray;
+            this.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStop.Location = new System.Drawing.Point(20, 260);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(75, 40);
+            this.btnStop.Size = new System.Drawing.Size(80, 40);
             this.btnStop.TabIndex = 3;
             this.btnStop.Text = "停止";
-            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.UseVisualStyleBackColor = false;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // btnPause
             // 
-            this.btnPause.Location = new System.Drawing.Point(232, 10);
+            this.btnPause.BackColor = System.Drawing.Color.DarkGray;
+            this.btnPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPause.Location = new System.Drawing.Point(20, 180);
             this.btnPause.Name = "btnPause";
-            this.btnPause.Size = new System.Drawing.Size(75, 40);
+            this.btnPause.Size = new System.Drawing.Size(80, 40);
             this.btnPause.TabIndex = 2;
             this.btnPause.Text = "暫停";
-            this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.UseVisualStyleBackColor = false;
             this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(122, 10);
+            this.btnPlay.BackColor = System.Drawing.Color.DarkGray;
+            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlay.Location = new System.Drawing.Point(20, 100);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(75, 40);
+            this.btnPlay.Size = new System.Drawing.Size(80, 40);
             this.btnPlay.TabIndex = 1;
             this.btnPlay.Text = "播放";
-            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.UseVisualStyleBackColor = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // btnBrowser
             // 
-            this.btnBrowser.Location = new System.Drawing.Point(12, 10);
+            this.btnBrowser.BackColor = System.Drawing.Color.DarkGray;
+            this.btnBrowser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBrowser.Location = new System.Drawing.Point(20, 20);
             this.btnBrowser.Name = "btnBrowser";
-            this.btnBrowser.Size = new System.Drawing.Size(75, 40);
+            this.btnBrowser.Size = new System.Drawing.Size(80, 40);
             this.btnBrowser.TabIndex = 0;
             this.btnBrowser.Text = "瀏覽";
-            this.btnBrowser.UseVisualStyleBackColor = true;
+            this.btnBrowser.UseVisualStyleBackColor = false;
             this.btnBrowser.Click += new System.EventHandler(this.btnBrowser_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SaddleBrown;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.palButton);
             this.Controls.Add(this.wmpVideo);
+            this.Controls.Add(this.palButton);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Padding = new System.Windows.Forms.Padding(20);
+            this.Text = "Media Player TV";
             ((System.ComponentModel.ISupportInitialize)(this.wmpVideo)).EndInit();
             this.palButton.ResumeLayout(false);
             this.ResumeLayout(false);
